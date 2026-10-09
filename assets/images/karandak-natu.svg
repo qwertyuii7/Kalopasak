@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="bgNatu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1226"/>
+      <stop offset="50%" stop-color="#180A15"/>
+      <stop offset="100%" stop-color="#0B040A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5CC"/>
+      <stop offset="40%" stop-color="#E5BE4A"/>
+      <stop offset="80%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#6B4800"/>
+    </linearGradient>
+    <radialGradient id="natuSpot" cx="50%" cy="38%" r="52%">
+      <stop offset="0%" stop-color="#FFEBB0" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#5E1638" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="12" fill="url(#bgNatu)"/>
+  <rect width="600" height="380" fill="url(#natuSpot)"/>
+
+  <!-- Director's Clapper & Natya Masks Symbolism -->
+  <g transform="translate(300, 150)">
+    <!-- Spotlight beam rays -->
+    <polygon points="0,-120 -150,140 150,140" fill="#FFE599" opacity="0.12"/>
+
+    <!-- Tragedy & Comedy Masks -->
+    <!-- Comedy Mask (Left) -->
+    <g transform="translate(-45, -15)">
+      <circle cx="0" cy="0" r="38" fill="#3D1222" stroke="url(#gold)" stroke-width="2.5"/>
+      <!-- Eyes -->
+      <path d="M -16 -8 Q -10 -15 -4 -8" stroke="url(#gold)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M 4 -8 Q 10 -15 16 -8" stroke="url(#gold)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Smiling mouth -->
+      <path d="M -16 10 Q 0 25 16 10 Q 0 16 -16 10 Z" fill="url(#gold)"/>
+    </g>
+
+    <!-- Tragedy / Contemplative Mask (Right) -->
+    <g transform="translate(45, 10)">
+      <circle cx="0" cy="0" r="38" fill="#290B17" stroke="url(#gold)" stroke-width="2.5"/>
+      <!-- Eyes -->
+      <path d="M -16 -12 Q -10 -5 -4 -12" stroke="url(#gold)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M 4 -12 Q 10 -5 16 -12" stroke="url(#gold)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Drama mouth -->
+      <path d="M -16 18 Q 0 6 16 18 Q 0 12 -16 18 Z" fill="url(#gold)"/>
+    </g>
+  </g>
+
+  <!-- Trophy Plaque / Base -->
+  <g transform="translate(300, 270)">
+    <rect x="-80" y="0" width="160" height="40" rx="4" fill="#1C0615" stroke="url(#gold)" stroke-width="2.5"/>
+    <rect x="-70" y="6" width="140" height="26" rx="2" fill="url(#gold)"/>
+    <text x="0" y="24" font-family="'Mukta', sans-serif" font-size="14" font-weight="bold" fill="#2E0A22" text-anchor="middle">राजा नातू करंडक</text>
+  </g>
+
+  <!-- Stage Planks -->
+  <polygon points="0,320 600,320 600,380 0,380" fill="#12040E" />
+</svg>

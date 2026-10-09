@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="bgKelkar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38101E"/>
+      <stop offset="50%" stop-color="#1F0811"/>
+      <stop offset="100%" stop-color="#0E0308"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5CC"/>
+      <stop offset="40%" stop-color="#E5BE4A"/>
+      <stop offset="80%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#6B4800"/>
+    </linearGradient>
+    <radialGradient id="kelkarSpot" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFE59E" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#801C38" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="12" fill="url(#bgKelkar)"/>
+  <rect width="600" height="380" fill="url(#kelkarSpot)"/>
+
+  <!-- Scriptwriter Parchment / Manuscript Motif -->
+  <g transform="translate(300, 160)">
+    <!-- Open Script Scroll -->
+    <path d="M -90 -60 Q -30 -80 30 -60 Q 90 -40 100 -20 L 80 80 Q 20 60 -40 80 Q -100 100 -90 -60 Z" fill="#F4E9D0" stroke="url(#gold)" stroke-width="2"/>
+    <!-- Script lines -->
+    <line x1="-60" y1="-35" x2="60" y2="-35" stroke="#8C6E54" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-60" y1="-15" x2="65" y2="-15" stroke="#8C6E54" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-60" y1="5" x2="40" y2="5" stroke="#8C6E54" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-50" y1="25" x2="55" y2="25" stroke="#8C6E54" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-40" y1="45" x2="30" y2="45" stroke="#8C6E54" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Quill Pen -->
+    <path d="M 60 -80 Q 90 -40 70 30 L 45 40 Q 55 10 50 -50 Z" fill="url(#gold)"/>
+    <polygon points="45,40 38,48 44,43" fill="#FFE899"/>
+  </g>
+
+  <!-- Trophy Plaque / Base -->
+  <g transform="translate(300, 270)">
+    <rect x="-80" y="0" width="160" height="40" rx="4" fill="#1C060F" stroke="url(#gold)" stroke-width="2.5"/>
+    <rect x="-70" y="6" width="140" height="26" rx="2" fill="url(#gold)"/>
+    <text x="0" y="24" font-family="'Mukta', sans-serif" font-size="13" font-weight="bold" fill="#2E0A16" text-anchor="middle">भा.ला.भा. केळकर करंडक</text>
+  </g>
+
+  <!-- Stage Planks -->
+  <polygon points="0,320 600,320 600,380 0,380" fill="#14040A" />
+</svg>

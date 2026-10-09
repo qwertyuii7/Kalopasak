@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="bgPurushottam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A0B11"/>
+      <stop offset="60%" stop-color="#240508"/>
+      <stop offset="100%" stop-color="#120204"/>
+    </linearGradient>
+    <radialGradient id="spotLight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFEBB0" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#D4AF37" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5CC"/>
+      <stop offset="40%" stop-color="#F2C84B"/>
+      <stop offset="80%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#6B4800"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="12" fill="url(#bgPurushottam)"/>
+  <rect width="600" height="380" fill="url(#spotLight)"/>
+
+  <!-- Proscenium Curtain Drapery subtle overlay -->
+  <path d="M 0 0 Q 150 60 300 0 Q 450 60 600 0 L 600 40 Q 450 90 300 40 Q 150 90 0 40 Z" fill="#6A1019" opacity="0.6" />
+
+  <!-- Laurel Wreath surrounding Trophy -->
+  <g transform="translate(300, 160)" fill="url(#gold)" opacity="0.45">
+    <!-- Left Branch -->
+    <path d="M -80 -40 C -120 10, -100 80, -40 110 C -60 70, -80 20, -50 -20 Z"/>
+    <ellipse cx="-90" cy="-10" rx="12" ry="6" transform="rotate(-30 -90 -10)"/>
+    <ellipse cx="-100" cy="30" rx="12" ry="6" transform="rotate(10 -100 30)"/>
+    <ellipse cx="-75" cy="75" rx="12" ry="6" transform="rotate(45 -75 75)"/>
+    <!-- Right Branch -->
+    <path d="M 80 -40 C 120 10, 100 80, 40 110 C 60 70, 80 20, 50 -20 Z"/>
+    <ellipse cx="90" cy="-10" rx="12" ry="6" transform="rotate(30 90 -10)"/>
+    <ellipse cx="100" cy="30" rx="12" ry="6" transform="rotate(-10 100 30)"/>
+    <ellipse cx="75" cy="75" rx="12" ry="6" transform="rotate(-45 75 75)"/>
+  </g>
+
+  <!-- Big Grand Purushottam Karandak Trophy -->
+  <g transform="translate(300, 175)">
+    <!-- Cup Bowl -->
+    <path d="M -50 -70 L 50 -70 L 38 25 Q 0 65 -38 25 Z" fill="url(#gold)" stroke="#FFF" stroke-width="1.2"/>
+    <!-- Handles -->
+    <path d="M -50 -55 C -90 -55, -80 0, -38 10" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 50 -55 C 90 -55, 80 0, 38 10" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Cup Core Medallion -->
+    <circle cx="0" cy="-20" r="16" fill="#4A0B11" stroke="url(#gold)" stroke-width="2"/>
+    <text x="0" y="-14" font-family="'Mukta', sans-serif" font-size="16" font-weight="bold" fill="#FFEBB0" text-anchor="middle">पु</text>
+
+    <!-- Trophy Stem & Base -->
+    <path d="M -12 45 L 12 45 L 16 85 L -16 85 Z" fill="url(#gold)"/>
+    <path d="M -45 85 L 45 85 L 55 115 L -55 115 Z" fill="#1C090C" stroke="url(#gold)" stroke-width="2.5"/>
+    <rect x="-35" y="92" width="70" height="15" rx="2" fill="url(#gold)"/>
+    <text x="0" y="103" font-family="'Mukta', sans-serif" font-size="9" font-weight="bold" fill="#3D060B" text-anchor="middle">पुरुषोत्तम करंडक</text>
+  </g>
+
+  <!-- Stage Planks & Lighting Glow -->
+  <polygon points="0,320 600,320 600,380 0,380" fill="#180709" />
+  <circle cx="300" cy="360" r="140" fill="#FCE182" opacity="0.12" filter="blur(15px)" />
+</svg>
