@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE182"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80141E"/>
+      <stop offset="100%" stop-color="#3A080C"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="url(#gold)" stroke-width="2"/>
+  <!-- Theatre Mask Motif -->
+  <path d="M 18 42 Q 32 51 46 42 Q 32 47 18 42 Z" fill="url(#gold)"/>
+  <path d="M 32 12 Q 40 24 32 34 Q 24 24 32 12 Z" fill="url(#gold)"/>
+  <path d="M 20 27 Q 26 23 30 28 Q 24 29 20 27 Z" fill="url(#gold)"/>
+  <path d="M 44 27 Q 38 23 34 28 Q 40 29 44 27 Z" fill="url(#gold)"/>
+  <path d="M 25 36 Q 32 41 39 36 Q 32 39 25 36 Z" fill="url(#gold)"/>
+</svg>
