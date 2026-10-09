@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="audSpot" cx="50%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#FFE8B3" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#801C26" stop-opacity="0.6" />
+      <stop offset="85%" stop-color="#190709" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="goldBalcony" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#996515" />
+      <stop offset="50%" stop-color="#F5E08B" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#140507" />
+  <rect width="1600" height="900" fill="url(#audSpot)" />
+
+  <!-- Classical Architectural Proscenium Arch -->
+  <path d="M 100 900 L 100 220 Q 800 60 1500 220 L 1500 900" fill="none" stroke="url(#goldBalcony)" stroke-width="18" opacity="0.85"/>
+  <path d="M 120 900 L 120 235 Q 800 85 1480 235 L 1480 900" fill="none" stroke="#60131B" stroke-width="6"/>
+
+  <!-- Ornate Arch Center Medallion (Nataraj Motif) -->
+  <circle cx="800" cy="140" r="45" fill="#420B10" stroke="url(#goldBalcony)" stroke-width="4" />
+  <circle cx="800" cy="140" r="36" fill="none" stroke="url(#goldBalcony)" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="800" y="148" font-family="serif" font-size="28" fill="#FCE182" text-anchor="middle" font-weight="bold">ॐ</text>
+
+  <!-- Stage Platform -->
+  <polygon points="180,620 1420,620 1550,750 50,750" fill="#2E1116" stroke="url(#goldBalcony)" stroke-width="2" />
+  
+  <!-- Illumination on Actors -->
+  <circle cx="720" cy="540" r="18" fill="#FCE182" opacity="0.9"/>
+  <path d="M 705 560 L 735 560 L 745 625 L 695 625 Z" fill="#E8C374" opacity="0.9"/>
+  <circle cx="880" cy="545" r="18" fill="#FCE182" opacity="0.9"/>
+  <path d="M 865 565 L 895 565 L 905 625 L 855 625 Z" fill="#E8C374" opacity="0.9"/>
+
+  <!-- Audience Silhouettes in Foreground (Applauding Crowd) -->
+  <!-- Balcony tiers -->
+  <path d="M 0 760 Q 800 710 1600 760 L 1600 900 L 0 900 Z" fill="#0C0304" />
+  
+  <!-- Applauding Hands & Audience heads rows -->
+  <g fill="#18070A">
+    <!-- Row 1 silhouettes -->
+    <circle cx="200" cy="800" r="32"/>
+    <circle cx="340" cy="790" r="30"/>
+    <circle cx="480" cy="795" r="34"/>
+    <circle cx="620" cy="785" r="28"/>
+    <circle cx="760" cy="790" r="32"/>
+    <circle cx="900" cy="780" r="35"/>
+    <circle cx="1040" cy="795" r="30"/>
+    <circle cx="1180" cy="785" r="33"/>
+    <circle cx="1320" cy="790" r="31"/>
+    <circle cx="1460" cy="800" r="35"/>
+
+    <!-- Applauding Hands raised in praise -->
+    <path d="M 380 760 L 390 730 L 400 760 Z" fill="#250C10" />
+    <path d="M 405 760 L 415 725 L 425 760 Z" fill="#250C10" />
+    <path d="M 810 750 L 820 715 L 830 750 Z" fill="#250C10" />
+    <path d="M 835 750 L 845 710 L 855 750 Z" fill="#250C10" />
+    <path d="M 1110 755 L 1120 720 L 1130 755 Z" fill="#250C10" />
+    <path d="M 1135 755 L 1145 715 L 1155 755 Z" fill="#250C10" />
+  </g>
+</svg>

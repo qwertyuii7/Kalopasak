@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Background Radial Gradients for Deep Atmospheric Lighting -->
+    <radialGradient id="centerStageSpot" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFE8A3" stop-opacity="0.95" />
+      <stop offset="25%" stop-color="#E59835" stop-opacity="0.6" />
+      <stop offset="55%" stop-color="#7B1824" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#120406" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="curtainLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D060B" />
+      <stop offset="30%" stop-color="#7A141F" />
+      <stop offset="60%" stop-color="#4E0B13" />
+      <stop offset="100%" stop-color="#1E0306" />
+    </linearGradient>
+    <linearGradient id="curtainRight" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#2D060B" />
+      <stop offset="30%" stop-color="#7A141F" />
+      <stop offset="60%" stop-color="#4E0B13" />
+      <stop offset="100%" stop-color="#1E0306" />
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C620F" />
+    </linearGradient>
+    <linearGradient id="stageFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2A120E" />
+      <stop offset="50%" stop-color="#1A0A08" />
+      <stop offset="100%" stop-color="#0E0403" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Stage Atmosphere -->
+  <rect width="1600" height="900" fill="#120406" />
+  <rect width="1600" height="900" fill="url(#centerStageSpot)" />
+
+  <!-- Overhead Spotlight Beams -->
+  <polygon points="350,0 120,680 620,680 480,0" fill="#FFF2CC" opacity="0.14" />
+  <polygon points="1250,0 980,680 1480,680 1120,0" fill="#FFE294" opacity="0.12" />
+  <polygon points="800,0 550,680 1050,680 800,0" fill="#FFF8E0" opacity="0.18" />
+
+  <!-- Classical Pune Proscenium Arch Outline -->
+  <path d="M 80 900 L 80 180 Q 800 40 1520 180 L 1520 900" fill="none" stroke="url(#goldTrim)" stroke-width="8" opacity="0.4" />
+  <path d="M 100 900 L 100 200 Q 800 70 1500 200 L 1500 900" fill="none" stroke="url(#goldTrim)" stroke-width="2" stroke-dasharray="6,4" opacity="0.3" />
+
+  <!-- Deep Velvet Curtains Left & Right -->
+  <path d="M 0 0 C 180 150, 80 450, 180 900 L 0 900 Z" fill="url(#curtainLeft)" />
+  <path d="M 0 0 C 120 200, 40 550, 110 900 L 0 900 Z" fill="url(#curtainLeft)" opacity="0.7" />
+  
+  <path d="M 1600 0 C 1420 150, 1520 450, 1420 900 L 1600 900 Z" fill="url(#curtainRight)" />
+  <path d="M 1600 0 C 1480 200, 1560 550, 1490 900 L 1600 900 Z" fill="url(#curtainRight)" opacity="0.7" />
+
+  <!-- Top Pelmet / Valance Curtains with Gold Fringe -->
+  <path d="M 0 0 Q 200 90 400 0 Q 600 90 800 0 Q 1000 90 1200 0 Q 1400 90 1600 0 L 1600 0 L 0 0 Z" fill="#580E16" />
+  <path d="M 0 0 Q 200 70 400 0 Q 600 70 800 0 Q 1000 70 1200 0 Q 1400 70 1600 0" fill="none" stroke="url(#goldTrim)" stroke-width="4" />
+
+  <!-- Polished Wooden Stage Floor with Reflections -->
+  <polygon points="0,670 1600,670 1600,900 0,900" fill="url(#stageFloor)" />
+  <line x1="0" y1="700" x2="1600" y2="700" stroke="#3A1711" stroke-width="1.5" opacity="0.6"/>
+  <line x1="0" y1="740" x2="1600" y2="740" stroke="#3A1711" stroke-width="1.5" opacity="0.6"/>
+  <line x1="0" y1="790" x2="1600" y2="790" stroke="#3A1711" stroke-width="1.5" opacity="0.6"/>
+  <line x1="0" y1="850" x2="1600" y2="850" stroke="#3A1711" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Stage Light Glow Floor Reflections -->
+  <ellipse cx="640" cy="700" rx="140" ry="25" fill="#FFEAA8" opacity="0.25" filter="url(#softGlow)" />
+  <ellipse cx="920" cy="705" rx="130" ry="22" fill="#FFEAA8" opacity="0.2" filter="url(#softGlow)" />
+
+  <!-- Dramatic Silhouette Characters (Passionate One-Act Drama Scene) -->
+  <!-- Lead Actor: Powerful Theatrical Monologue Stance -->
+  <g fill="#140608">
+    <ellipse cx="630" cy="695" rx="65" ry="12" fill="#0A0204" opacity="0.75" />
+    <!-- Body & Head -->
+    <circle cx="630" cy="465" r="28" fill="#240D13" stroke="url(#goldTrim)" stroke-width="1"/>
+    <path d="M 605 495 Q 630 488 655 495 L 675 605 Q 645 635 635 695 L 605 695 Q 615 625 585 605 Z" fill="#200B10" />
+    <!-- Dynamic Raised Arm Gesture -->
+    <path d="M 610 505 Q 545 470 485 435 Q 498 425 530 450 Q 575 475 615 515 Z" fill="#33121A" />
+    <!-- Supporting Hand Gesture -->
+    <path d="M 650 515 Q 695 480 730 440 Q 740 450 710 490 Q 675 525 648 535 Z" fill="#33121A" />
+  </g>
+
+  <!-- Dramatic Dialogue Partner (Right) -->
+  <g fill="#16070A">
+    <ellipse cx="910" cy="700" rx="60" ry="12" fill="#0A0204" opacity="0.75" />
+    <circle cx="910" cy="485" r="26" fill="#240D13" stroke="url(#goldTrim)" stroke-width="1"/>
+    <path d="M 890 512 Q 910 506 930 512 L 950 625 Q 920 655 915 700 L 885 700 Q 890 635 865 620 Z" fill="#1F0A0F" />
+    <!-- Expressive Listening Hands Gesture -->
+    <path d="M 890 530 Q 840 528 820 555 Q 835 565 865 550 Q 885 545 895 540 Z" fill="#311118" />
+  </g>
+
+  <!-- Background Ensemble Actor -->
+  <g fill="#100407" opacity="0.9">
+    <ellipse cx="1100" cy="690" rx="45" ry="10" fill="#0A0204" opacity="0.6" />
+    <circle cx="1100" cy="515" r="22" fill="#1C080D"/>
+    <path d="M 1085 538 Q 1100 532 1115 538 L 1130 625 L 1090 690 L 1070 690 Z" fill="#18060A"/>
+  </g>
+
+  <!-- Footlights along Stage Rim -->
+  <rect x="250" y="875" width="1100" height="8" rx="4" fill="url(#goldTrim)" opacity="0.8" />
+  <circle cx="450" cy="878" r="8" fill="#FFFCE6" opacity="0.9" />
+  <circle cx="650" cy="878" r="8" fill="#FFFCE6" opacity="0.9" />
+  <circle cx="800" cy="878" r="10" fill="#FFFCE6" opacity="0.95" />
+  <circle cx="950" cy="878" r="8" fill="#FFFCE6" opacity="0.9" />
+  <circle cx="1150" cy="878" r="8" fill="#FFFCE6" opacity="0.9" />
+</svg>
