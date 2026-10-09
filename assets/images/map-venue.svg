@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="700" height="480">
+  <defs>
+    <radialGradient id="mapGlow" cx="48%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#4A0F16" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#1A0609" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0E0305" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0BE"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8C620F"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(212, 175, 55, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Dark Architectural Map Canvas -->
+  <rect width="700" height="480" fill="#120406"/>
+  <rect width="700" height="480" fill="url(#mapGlow)"/>
+  <rect width="700" height="480" fill="url(#gridPattern)"/>
+
+  <!-- Stylized Pune City Arterial Roads (Sadashiv Peth District) -->
+  <!-- Bajirao Road -->
+  <path d="M 120 0 L 160 480" stroke="rgba(255, 255, 255, 0.12)" stroke-width="14" fill="none"/>
+  <path d="M 120 0 L 160 480" stroke="rgba(212, 175, 55, 0.25)" stroke-width="2" stroke-dasharray="8,6" fill="none"/>
+  <text x="145" y="60" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#8E827B" transform="rotate(85 145 60)" letter-spacing="1">BAJIRAO ROAD</text>
+
+  <!-- Tilak Road -->
+  <path d="M 0 380 L 700 320" stroke="rgba(255, 255, 255, 0.14)" stroke-width="16" fill="none"/>
+  <path d="M 0 380 L 700 320" stroke="rgba(212, 175, 55, 0.25)" stroke-width="2" stroke-dasharray="8,6" fill="none"/>
+  <text x="480" y="335" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#8E827B" transform="rotate(-5 480 335)" letter-spacing="1">TILAK ROAD (टिळक रस्ता)</text>
+
+  <!-- Kumthekar Road -->
+  <path d="M 0 160 L 700 130" stroke="rgba(255, 255, 255, 0.1)" stroke-width="12" fill="none"/>
+  <text x="420" y="142" font-family="'Inter', sans-serif" font-size="9" fill="#7D726B">KUMTHEKAR ROAD</text>
+
+  <!-- Connecting Sadashiv Peth lanes -->
+  <path d="M 280 145 L 310 355" stroke="rgba(255, 255, 255, 0.08)" stroke-width="8" fill="none"/>
+  <path d="M 440 138 L 470 340" stroke="rgba(255, 255, 255, 0.08)" stroke-width="8" fill="none"/>
+  <path d="M 150 240 L 580 215" stroke="rgba(255, 255, 255, 0.08)" stroke-width="10" fill="none"/>
+
+  <!-- District Label Area -->
+  <rect x="220" y="270" width="160" height="34" rx="4" fill="rgba(0, 0, 0, 0.6)" stroke="rgba(212, 175, 55, 0.2)"/>
+  <text x="300" y="292" font-family="'Mukta', sans-serif" font-size="13" font-weight="bold" fill="#D4AF37" text-anchor="middle">सदाशिव पेठ, पुणे</text>
+
+  <!-- Bharat Natya Mandir Precinct Highlight -->
+  <rect x="280" y="180" width="180" height="90" rx="8" fill="rgba(126, 24, 35, 0.35)" stroke="url(#gold)" stroke-width="1.5"/>
+
+  <!-- Primary Venue Gold Pin / Beacon -->
+  <g transform="translate(370, 215)">
+    <!-- Radar Pulse Ring -->
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.6"/>
+    <circle cx="0" cy="0" r="18" fill="rgba(212, 175, 55, 0.2)"/>
+    
+    <!-- Pin Body -->
+    <path d="M 0 -22 C -10 -22, -16 -12, -16 -2 C -16 10, 0 24, 0 24 C 0 24, 16 10, 16 -2 C 16 -12, 10 -22, 0 -22 Z" fill="url(#gold)"/>
+    <circle cx="0" cy="-6" r="6" fill="#2E070B"/>
+
+    <!-- Theatre Natya Mask Icon inside Pin -->
+    <path d="M -3 -8 Q 0 -5 3 -8" stroke="#FFE899" stroke-width="1.5" fill="none"/>
+    <path d="M -3 -4 Q 0 -2 3 -4" stroke="#FFE899" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Venue Callout Card -->
+  <g transform="translate(370, 125)">
+    <rect x="-135" y="-35" width="270" height="60" rx="6" fill="#1C070B" stroke="url(#gold)" stroke-width="1.5"/>
+    <text x="0" y="-14" font-family="'Mukta', sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">भरत नाट्य मंदिर (कलोपासक कार्यालय)</text>
+    <text x="0" y="6" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#D4AF37" text-anchor="middle" letter-spacing="0.5">BHARAT NATYA MANDIR • PUNE 411030</text>
+    <text x="0" y="18" font-family="'Inter', sans-serif" font-size="9" fill="#B8AEA7" text-anchor="middle">18.5176° N, 73.8498° E</text>
+  </g>
+
+  <!-- Compass Rose in Corner -->
+  <g transform="translate(630, 70)" opacity="0.75">
+    <circle cx="0" cy="0" r="26" fill="rgba(0,0,0,0.5)" stroke="url(#gold)" stroke-width="1"/>
+    <polygon points="0,-20 5,-5 0,0 -5,-5" fill="#D4AF37"/>
+    <polygon points="0,20 5,5 0,0 -5,5" fill="#7D726B"/>
+    <polygon points="20,0 5,5 0,0 5,-5" fill="#7D726B"/>
+    <polygon points="-20,0 -5,5 0,0 -5,-5" fill="#7D726B"/>
+    <text x="0" y="-23" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#D4AF37" text-anchor="middle">N</text>
+  </g>
+</svg>
