@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" aria-label="सुधीर फडके">
+  <defs>
+    <radialGradient id="grad_SF" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#F5E08B" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#7B1824"/>
+      <stop offset="100%" stop-color="#1A070B"/>
+    </radialGradient>
+  </defs>
+  <!-- Outer Gold Rim -->
+  <circle cx="80" cy="80" r="76" fill="url(#grad_SF)" stroke="#F5E08B" stroke-width="3"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#F5E08B" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
+  
+  <!-- Stylized Theatre Persona Silhouette Motif -->
+  <circle cx="80" cy="62" r="26" fill="#F5E08B" opacity="0.25"/>
+  <path d="M 38 126 C 44 96, 116 96, 122 126 Z" fill="#F5E08B" opacity="0.2"/>
+
+  <!-- Initials Text / Monogram -->
+  <text x="80" y="88" font-family="'Tiro Devanagari Marathi', 'Georgia', serif" font-size="36" font-weight="bold" fill="#F5E08B" text-anchor="middle" letter-spacing="1">SF</text>
+  
+  <!-- Subtle Natya Diya at bottom -->
+  <path d="M 72 136 Q 80 142 88 136 Q 80 139 72 136 Z" fill="#F5E08B"/>
+</svg>
